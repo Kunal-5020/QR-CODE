@@ -1,0 +1,74 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 15vw;
+  background-color: #343a40;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;  /* Fix the sidebar to the left side */
+  top: 0;
+  left: 0;
+  height: 100vh;  /* Ensure it takes the full height of the screen */
+  z-index: 100;  /* Ensure it stays above other content */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for better separation */
+}
+
+/* Sidebar Header */
+.sidebar h2 {
+  text-align: center;
+  color: #ffc107;
+  margin-bottom: 30px;  /* Add more spacing between the title and menu items */
+  font-size: 24px;
+}
+
+/* Sidebar Navigation List */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* Sidebar Menu Items */
+.sidebar ul li {
+  margin-bottom: 15px; /* Increased space between menu items */
+}
+
+/* Sidebar Links */
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 12px;
+  display: block;
+  border-radius: 6px;  /* Rounded corners for a softer look */
+  transition: background 0.3s ease, padding 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover Effect */
+.sidebar ul li a:hover {
+  background-color: #495057;
+  padding-left: 15px;  /* Indent the link when hovered */
+}
+
+/* Active Link */
+.sidebar ul li a.active-link {
+  background-color: #ffc107;
+  color: #343a40;
+  font-weight: bold;
+  padding-left: 15px;  /* Match hover effect for consistency */
+}
+
+/* Make Sidebar Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 200px; /* Slightly smaller sidebar for mobile screens */
+  }
+
+  .sidebar h2 {
+      font-size: 20px;  /* Adjust title font size */
+  }
+
+  .sidebar ul li a {
+      font-size: 14px;  /* Smaller font size on mobile */
+  }
+}

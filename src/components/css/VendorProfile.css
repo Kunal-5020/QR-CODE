@@ -1,0 +1,198 @@
+
+.vendor-header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .vendor-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .details-section {
+    flex: 1;
+  }
+  
+  .qr-code-section {
+    width: 200px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .qr-code-section h4 {
+    margin-bottom: 10px;
+  }
+  
+  .qr-code-section a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  .actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-btn,
+  .delete-btn,
+  .update-btn,
+  .confirm-btn,
+  .cancel-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn,
+  .update-btn {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .delete-btn:hover,
+  .edit-btn:hover,
+  .update-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .edit-btn {
+    background-color: #f39c12;
+  }
+  
+  .delete-confirm-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+  }
+  
+  .delete-confirm-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .delete-confirm-content p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .confirm-btn {
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .cancel-btn {
+    background-color: #95a5a6;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .customer-header {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .customer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .customer-table th,
+  .customer-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .customer-table th {
+    background-color: #f1f1f1;
+  }
+  
+  .customer-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .footer-header {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  .footer-info {
+    color: #7f8c8d;
+    font-size: 1rem;
+  }
+  
+  .edit-form {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-group input:focus {
+    border-color: #3498db;
+  }
+  
+  .update-btn {
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .update-btn:hover {
+    opacity: 0.8;
+  }

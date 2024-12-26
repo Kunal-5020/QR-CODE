@@ -1,0 +1,98 @@
+.vendor-container {
+  width: 81.5vw; /* Occupy 85% of the viewport width */
+  margin-left: 15vw; /* Shift the container to the right of the 15vw sidebar */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  min-height: 100vh; /* Ensure it spans the full height of the viewport */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+  
+ 
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-vendor-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px; /* Limit the width of the form */
+  margin: 0 auto; /* Center the form within the container */
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+.form-field label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-field input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Vendor-List */
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.vendor-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.vendor-table th, .vendor-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.vendor-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.vendor-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+.search-input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.vendor-table tr:hover {
+  background-color: #f9f9f9;
+}

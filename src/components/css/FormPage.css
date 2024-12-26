@@ -1,0 +1,193 @@
+    /* Container that holds the form */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Form styles */
+    .form2 {
+        width: 100%; /* Allow the form to scale with its parent */
+        max-width: 550px; /* Set a maximum width for the form */
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 0 auto; /* Center the form horizontally */
+    }
+
+    /* Title */
+    form h2 {
+        font-size: 28px;
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Form Fields */
+    form div {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Label styling */
+    label {
+        color: #555;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    /* Input fields styling */
+    input, textarea {
+        background: rgba(255, 255, 255, 0.8);
+        border: 2px solid #ddd;
+        padding: 12px;
+        border-radius: 6px;
+        font-size: 16px;
+        width: 100%;
+        transition: all 0.3s ease;
+    }
+
+    /* Input field focus effect */
+    input:focus, textarea:focus {
+        background: #fff;
+        border-color: #2f4ad0;
+        outline: none;
+    }
+
+    /* Button styling */
+    button {
+        background: #2f4ad0;
+        color: white;
+        padding: 14px 24px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        font-size: 16px;
+        margin-top: 20px;
+        width: 100%; /* Make button full width */
+    }
+
+    button:hover {
+        background-color: #fc5c7d;
+        box-shadow: 0 6px 12px rgba(47, 74, 208, 0.3);
+    }
+
+    button:active {
+        transform: translateY(2px);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 1024px) {
+        form {
+            min-width: 80%; /* Adjust form width for tablets */
+        }
+
+        form h2 {
+            font-size: 24px;
+        }
+
+        input, textarea {
+            font-size: 15px;
+        }
+
+        button {
+            font-size: 15px;
+            padding: 12px 24px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        form {
+            min-width: 85%; /* Adjust form width for smaller tablets */
+        }
+
+        form h2 {
+            font-size: 22px;
+        }
+
+        input, textarea {
+            font-size: 14px;
+        }
+
+        button {
+            font-size: 14px;
+            padding: 12px 22px;
+        }
+    }
+
+    @media (max-width: 425px) {
+        form {
+            min-width: 95%; /* Form takes up most of the screen for small phones */
+        }
+
+        form h2 {
+            font-size: 20px;
+        }
+
+        input, textarea {
+            font-size: 14px;
+        }
+
+        button {
+            font-size: 14px;
+            padding: 12px 20px;
+        }
+    }
+
+    .error-message {
+        color: red;
+        font-size: 14px;
+        margin-top: 4px;
+        display: block;
+    }
+
+    input.invalid {
+        border-color: red;
+    }
+
+
+
+    .form-hidden {
+        display: none;
+      }
+      
+      /* Success message styles */
+      .success-message {
+        margin-top: 20px;
+        background-color: #d4edda;
+        color: #155724;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        animation: colorChange 3s infinite;
+      }
+      
+      .animated-vendor {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #2c3e50;
+        animation: colorChange 3s infinite;
+      }
+      
+      
+      @keyframes colorChange {
+        0% {
+          color: #2c3e50;
+        }
+        50% {
+          color: #3498db;
+        }
+        100% {
+          color: #2c3e50;
+        }
+      }
+      

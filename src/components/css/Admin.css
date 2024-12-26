@@ -1,0 +1,110 @@
+/* Admin Page Container */
+.admin-page {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the page takes the full height */}
+
+/* Form Container */
+.admin-form-container {
+    background: #fff;
+    color: #333;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px; /* Increased max-width */
+    text-align: center;
+    margin: 20px;
+}
+
+/* Title */
+.admin-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2a5298;
+}
+
+/* Form Styles */
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+/* Form Field Styling */
+.form-field {
+    text-align: left;
+    font-size: 14px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #555;
+}
+
+/* Input Field Styling */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus States */
+input:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 5px rgba(42, 82, 152, 0.5);
+    outline: none;
+}
+
+/* Submit Button */
+.admin-login-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background: #2a5298;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-login-button:hover {
+    background-color: #1e3c72;
+    box-shadow: 0 4px 10px rgba(42, 82, 152, 0.3);
+}
+
+.admin-login-button:active {
+    transform: translateY(2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-form-container {
+        padding: 30px 20px;
+    }
+
+    .admin-title {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    .admin-login-button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
