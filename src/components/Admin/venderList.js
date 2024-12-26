@@ -66,7 +66,7 @@ const VendorList = () => {
               <td>{vendor.vendor_phone}</td>
               <td>{vendor.vendor_shoplocation}</td>
               <td>
-                <Link to={`http://localhost:3000/admin/vendor-profile/${vendor._id}`}>View Profile</Link>
+                <Link to={`https://qr-code-99.netlify.app/admin/vendor-profile/${vendor._id}`}>View Profile</Link>
               </td>
             </tr>
           ))}
