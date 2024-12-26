@@ -22,7 +22,7 @@ const VendorProfile = () => {
     const fetchVendorData = async () => {
       try {
         const vendorResponse = await axios.get(
-          `http://192.168.1.2:5000/vendor/${vendorId}`
+          `https://qr-code-i8zg.onrender.com/vendor/${vendorId}`
         );
         setVendor(vendorResponse.data);
         setUpdatedVendor({
@@ -55,7 +55,7 @@ const VendorProfile = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://192.168.1.2:5000/vendor/${vendorId}`,
+        `https://qr-code-i8zg.onrender.com/vendor/${vendorId}`,
         updatedVendor
       );
       setVendor(response.data);
@@ -67,7 +67,7 @@ const VendorProfile = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://192.168.1.2:5000/vendor/${vendorId}`);
+      await axios.delete(`https://qr-code-i8zg.onrender.com/vendor/${vendorId}`);
       navigate("/admin/vendor-list");
     } catch (err) {
       setError("Error deleting vendor");

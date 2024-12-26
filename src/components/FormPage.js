@@ -26,7 +26,7 @@ const FormPage = () => {
   useEffect(() => {
     const fetchVendorData = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/vendor/${target}`);
+        const response = await axios.get(`https://qr-code-i8zg.onrender.com/vendor/${target}`);
         setVendorName(response.data.vendor_name);
         setError(null); // Clear error if successful
       } catch (err) {
@@ -94,7 +94,7 @@ const FormPage = () => {
     if (Object.keys(newErrors).length === 0) {
       try {
         const response = await axios.post(
-          `http://localhost:5000/vendor/${target}/customer`,
+          `https://qr-code-i8zg.onrender.com/vendor/${target}/customer`,
           {
             customer_name: name,
             phone,

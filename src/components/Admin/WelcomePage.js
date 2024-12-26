@@ -14,7 +14,7 @@ const WelcomePage = () => {
         setLoading(true);
 
         // Fetch all vendors
-        const response = await axios.get('http://localhost:5000/vendors');
+        const response = await axios.get('https://qr-code-i8zg.onrender.com/vendors');
         const vendors = response.data;
 
         // Calculate counts

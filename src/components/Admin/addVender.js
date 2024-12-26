@@ -29,7 +29,7 @@ const AddVendor = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:5000/vendor', vendorDataFormatted);
+      const response = await axios.post('https://qr-code-i8zg.onrender.com/vendor', vendorDataFormatted);
       
       // Retrieve vendor ID from response
       const vendorId = response.data.vendor._id;

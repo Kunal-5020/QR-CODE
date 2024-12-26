@@ -12,7 +12,7 @@ const VendorList = () => {
     // Fetch all vendors from the backend
     const fetchVendors = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/vendors');
+        const response = await axios.get('https://qr-code-i8zg.onrender.com/vendors');
         setVendors(response.data);  // Store the vendor data in the state
       } catch (err) {
         setError('Error fetching vendors');  // Set an error message if the request fails
