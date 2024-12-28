@@ -96,12 +96,13 @@ const VendorProfile = () => {
             <div className="qr-code-section">
               <h4>QR Code</h4>
               <QRCodeCanvas
-                value={`http://192.168.1.2:3000/?target=${vendorId}`}
+              
+                value={`https://qr-code-99.netlify.app/?target=${vendorId}`}
                 size={100}
               />
               <p>
                 <a
-                  href={`http://192.168.1.2:3000/?target=${vendorId}`}
+                  href={`https://qr-code-99.netlify.app/?target=${vendorId}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
